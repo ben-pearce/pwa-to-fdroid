@@ -1,0 +1,41 @@
+---
+
+# Custom path to the Android SDK, defaults to $ANDROID_HOME
+sdk_path: $ANDROID_HOME
+
+# Canonical URL of the repositoy, needs to end in /repo. Is is used to identity
+# the repo in the client, as well.
+repo_url: https://fdroid.benpearce.io/repo
+repo_name: F-Droid Repository
+
+# As above, but for the archive repo.
+#
+archive_url: https://fdroid.benpearce.io/archive
+archive_name: F-Droid Repository Archive
+
+# The key (from the keystore defined below) to be used for signing the
+# repository itself. This is the same name you would give to keytool or
+# jarsigner using -alias. (Not needed in an unsigned repository).
+repo_keyalias: KEY_ALIAS
+
+# The keystore to use for release keys when building. This needs to be
+# somewhere safe and secure, and backed up!  The best way to manage these
+# sensitive keys is to use a "smartcard" (aka Hardware Security Module). To
+# configure F-Droid to use a smartcard, set the keystore file using the keyword
+# "NONE" (i.e. keystore: "NONE"). That makes Java find the keystore on the
+# smartcard based on 'smartcardoptions' below.
+keystore: keystore.p12
+
+# The password for the keystore (at least 6 characters). If this password is
+# different than the keypass below, it can be OK to store the password in this
+# file for real use. But in general, sensitive passwords should not be stored
+# in text files!
+keystorepass: KEYSTORE_PASSWORD
+
+# The password for keys - the same is used for each auto-generated key as well
+# as for the repository key. You should not normally store this password in a
+# file since it is a sensitive password.
+keypass: KEY_PASSWORD
+
+# The distinguished name used for all keys.
+keydname: CN=KEY_ALIAS, OU=F-Droid

@@ -1,0 +1,5 @@
+services:
+  fdroid-web:
+    build: .
+    ports:
+    - 8080:80

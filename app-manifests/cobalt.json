@@ -1,0 +1,50 @@
+{
+  "packageId": "io.benpearce.jessie.cobalt.twa",
+  "host": "cobalt.jessie.benpearce.io",
+  "name": "cobalt",
+  "launcherName": "cobalt",
+  "display": "fullscreen",
+  "themeColor": "#000000",
+  "themeColorDark": "#000000",
+  "navigationColor": "#000000",
+  "navigationColorDark": "#000000",
+  "navigationDividerColor": "#000000",
+  "navigationDividerColorDark": "#000000",
+  "backgroundColor": "#000000",
+  "enableNotifications": true,
+  "startUrl": "/",
+  "iconUrl": "https://cobalt.jessie.benpearce.io/icons/android-chrome-512x512.png",
+  "maskableIconUrl": "https://cobalt.jessie.benpearce.io/icons/maskable/512.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "/app/android.keystore",
+    "alias": "android"
+  },
+  "appVersionName": "1",
+  "appVersionCode": 1,
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://cobalt.jessie.benpearce.io/manifest.webmanifest",
+  "fallbackType": "customtabs",
+  "features": {},
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "fullScopeUrl": "https://cobalt.jessie.benpearce.io/",
+  "minSdkVersion": 19,
+  "shareTarget": {
+    "action": "https://cobalt.jessie.benpearce.io/",
+    "params": {
+      "text": "u",
+      "url": "u"
+    }
+  },
+  "orientation": "portrait",
+  "fingerprints": [],
+  "additionalTrustedOrigins": [],
+  "retainedBundles": [],
+  "appVersion": "1"
+}
