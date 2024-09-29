@@ -1,0 +1,74 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:130.0) Gecko/20100101 Firefox/130.0" version="24.7.16">
+  <diagram name="Page-1" id="TbRAq4eD3knTytK-N8-4">
+    <mxGraphModel dx="954" dy="528" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="yiCK8C75R0NFqTvxXmpJ-7" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="540" y="200" width="220" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="yiCK8C75R0NFqTvxXmpJ-8" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="yiCK8C75R0NFqTvxXmpJ-7">
+          <mxGeometry width="220" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="yiCK8C75R0NFqTvxXmpJ-9" value="Deploy" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="yiCK8C75R0NFqTvxXmpJ-7">
+          <mxGeometry x="70" width="80" height="17.142857142857142" as="geometry" />
+        </mxCell>
+        <mxCell id="yiCK8C75R0NFqTvxXmpJ-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="yiCK8C75R0NFqTvxXmpJ-7" source="yiCK8C75R0NFqTvxXmpJ-19" target="yiCK8C75R0NFqTvxXmpJ-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yiCK8C75R0NFqTvxXmpJ-19" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;5. Copy example &lt;font color=&quot;#3399ff&quot; face=&quot;Courier New&quot;&gt;docker-compose.yml&lt;/font&gt; file to production server&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="yiCK8C75R0NFqTvxXmpJ-7">
+          <mxGeometry x="10" y="50" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yiCK8C75R0NFqTvxXmpJ-20" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;6. Start production F-Droid repository container &lt;font face=&quot;Courier New&quot;&gt;&lt;font color=&quot;#3399ff&quot;&gt;docker compose up&lt;/font&gt;&lt;br&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="yiCK8C75R0NFqTvxXmpJ-7">
+          <mxGeometry x="10" y="110" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yiCK8C75R0NFqTvxXmpJ-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="200" width="220" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="yiCK8C75R0NFqTvxXmpJ-2" value="Build" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="200" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yiCK8C75R0NFqTvxXmpJ-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="yiCK8C75R0NFqTvxXmpJ-10" target="yiCK8C75R0NFqTvxXmpJ-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yiCK8C75R0NFqTvxXmpJ-10" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;1. Invoke &lt;font color=&quot;#3399ff&quot; style=&quot;background-color: rgb(255, 255, 255); font-size: 10px;&quot; face=&quot;Courier New&quot;&gt;sh bubblewrap-add-pwa.sh [manifest-url]&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="250" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="yiCK8C75R0NFqTvxXmpJ-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="yiCK8C75R0NFqTvxXmpJ-11" target="yiCK8C75R0NFqTvxXmpJ-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yiCK8C75R0NFqTvxXmpJ-11" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;2. Repeat (1) for every PWA&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="340" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yiCK8C75R0NFqTvxXmpJ-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="yiCK8C75R0NFqTvxXmpJ-11" target="yiCK8C75R0NFqTvxXmpJ-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yiCK8C75R0NFqTvxXmpJ-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="200" width="220" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="yiCK8C75R0NFqTvxXmpJ-6" value="Publish" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="200" width="80" height="26.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="yiCK8C75R0NFqTvxXmpJ-15" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;3. Run &lt;font style=&quot;font-size: 10px;&quot; color=&quot;#3399ff&quot; face=&quot;Courier New&quot;&gt;docker build -t pwa-to-fdroid .&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="250" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yiCK8C75R0NFqTvxXmpJ-17" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;4. Publish to container repository &lt;font style=&quot;font-size: 10px;&quot; color=&quot;#3399ff&quot; face=&quot;Courier New&quot;&gt;docker push ghcr.io/[user]/pwa-to-fdroid:latest&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="310" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yiCK8C75R0NFqTvxXmpJ-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="yiCK8C75R0NFqTvxXmpJ-15" target="yiCK8C75R0NFqTvxXmpJ-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yiCK8C75R0NFqTvxXmpJ-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="yiCK8C75R0NFqTvxXmpJ-11" target="yiCK8C75R0NFqTvxXmpJ-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="390" />
+              <mxPoint x="290" y="390" />
+              <mxPoint x="290" y="240" />
+              <mxPoint x="410" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
