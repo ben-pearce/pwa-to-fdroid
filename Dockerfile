@@ -37,5 +37,5 @@ RUN . /etc/profile.d/bsenv.sh && GRADLE_USER_HOME=${home_vagrant}/.gradle ${fdro
 FROM nginx:1.27.1-alpine
 COPY --from=2 /repo/repo /usr/share/nginx/html/repo
 
-COPY config/nginx/default.conf /etc/nginx/sites-available/default.conf
+COPY config/nginx/default.conf /etc/nginx/conf.d/default.conf
 COPY config/nginx/.htpasswd /etc/nginx/.htpasswd
