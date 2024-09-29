@@ -8,5 +8,6 @@ for file in /app-manifests/*.json; do
     bubblewrap fingerprint --manifest=$(pwd)/twa-manifest.json add $fingerprint
     bubblewrap fingerprint --manifest=$(pwd)/twa-manifest.json generateAssetLinks
     cp app-release-signed.apk /repo/repo/$(basename $file .json).apk
-    cp assetlinks.json /repo/repo/$(basename $file .json).assetlinks.json
+    mkdir -p /repo/repo/$(basename $file .json)
+    cp assetlinks.json /repo/repo/$(basename $file .json)/assetlinks.json
 done
