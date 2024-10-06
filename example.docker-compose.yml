@@ -5,6 +5,8 @@ services:
   fdroid-repository:
     container_name: fdroid-repository
     image: ghcr.io/ben-pearce/pwa-to-fdroid:latest
+    secrets:
+      - fdroid_password
     environment:
       - HTTP_AUTH_LOGIN: ben
       - HTTP_AUTH_PASSWORD_FILE: /run/secrets/fdroid_password

@@ -1,5 +1,9 @@
 #!/bin/sh
 
+if [ "${HTTP_AUTH_PASSWORD_FILE}" != "" ]; then
+  HTTP_AUTH_PASSWORD=$(cat $HTTP_AUTH_PASSWORD_FILE)
+fi
+
 if [ "${HTTP_AUTH_PASSWORD}" != "" ]; then
   sed -i "s/#auth_basic/auth_basic/g;" /etc/nginx/nginx.conf
   rm -rf /etc/nginx/.htpasswd
