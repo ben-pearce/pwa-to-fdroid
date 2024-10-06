@@ -1,0 +1,27 @@
+secrets:
+  fdroid_password:
+    file: ./.secrets/fdroid_password
+services:
+  fdroid-repository:
+    container_name: fdroid-repository
+    image: ghcr.io/ben-pearce/pwa-to-fdroid:latest
+    environment:
+      - HTTP_AUTH_LOGIN: ben
+      - HTTP_AUTH_PASSWORD_FILE: /run/secrets/fdroid_password
+    labels:
+      traefik.enable: true
+      traefik.http.routers.fdroid-web.entrypoints: https
+      traefik.http.routers.fdroid-web.rule: Host(`fdroid.benpearce.io`)
+
+      traefik.http.middlewares.cobalt-replacepath.replacepath.path: /repo/cobalt/assetlinks.json
+      traefik.http.routers.fdroid-web-cobalt.entrypoints: https
+      traefik.http.routers.fdroid-web-cobalt.rule: Host(`cobalt.benpearce.io`) && Path(`/.well-known/assetlinks.json`)
+      traefik.http.routers.fdroid-web-cobalt.middlewares: cobalt-replacepath
+
+      traefik.http.middlewares.homer-replacepath.replacepath.path: /repo/homer/assetlinks.json
+      traefik.http.routers.fdroid-web-homer.entrypoints: https
+      traefik.http.routers.fdroid-web-homer.rule: Host(`homer.benpearce.io`) && Path(`/.well-known/assetlinks.json`)
+      traefik.http.routers.fdroid-web-homer.middlewares: homer-replacepath
+
+      traefik.http.services.fdroid-web.loadbalancer.server.port: 80
+    restart: unless-stopped
