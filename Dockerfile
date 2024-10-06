@@ -37,5 +37,11 @@ RUN . /etc/profile.d/bsenv.sh && GRADLE_USER_HOME=${home_vagrant}/.gradle ${fdro
 FROM nginx:1.27.1-alpine
 COPY --from=2 /repo/repo /usr/share/nginx/html/repo
 
-COPY config/nginx/default.conf /etc/nginx/conf.d/default.conf
-COPY config/nginx/.htpasswd /etc/nginx/.htpasswd
+COPY templates/nginx/default.conf /etc/nginx/conf.d/default.conf
+
+COPY scripts/nginx-entrypoint.sh /root/entrypoint.sh
+RUN chmod +x /root/entrypoint.sh
+
+RUN apk add openssl
+
+ENTRYPOINT [ "/root/entrypoint.sh" ]
