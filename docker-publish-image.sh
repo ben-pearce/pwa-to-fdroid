@@ -8,7 +8,15 @@ fi
 
 docker login "${1%%/*}"
 
-docker build -t pwa-to-fdroid .
+if [ ! -s ".keystore-password" ]
+then
+  install -m 600 <(openssl rand -base64 32) .keystore-password
+fi
+
+docker build \
+  --build-arg KEYSTORE_PASSWORD=$(cat .keystore-password) \
+  --build-arg KEY_PASSWORD=$(cat .keystore-password) \
+  -t pwa-to-fdroid .
 
 docker tag pwa-to-fdroid $1:latest
 docker push $1:latest
