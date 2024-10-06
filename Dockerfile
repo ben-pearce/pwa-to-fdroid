@@ -11,7 +11,6 @@ COPY config/fdroid.yml /repo/config.yml
 RUN sed -i "s|KEY_ALIAS|$KEY_ALIAS|g" /repo/config.yml
 RUN sed -i "s|KEYSTORE_PASSWORD|$KEYSTORE_PASSWORD|g" /repo/config.yml
 RUN sed -i "s|KEY_PASSWORD|$KEY_PASSWORD|g" /repo/config.yml
-RUN cat /repo/config.yml
 RUN chmod 0600 /repo/config.yml
 RUN . /etc/profile.d/bsenv.sh && GRADLE_USER_HOME=${home_vagrant}/.gradle ${fdroidserver}/fdroid update --create-key -c
 
