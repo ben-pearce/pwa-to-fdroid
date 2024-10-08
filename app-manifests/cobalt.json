@@ -3,7 +3,7 @@
   "host": "cobalt.jessie.benpearce.io",
   "name": "cobalt",
   "launcherName": "cobalt",
-  "display": "fullscreen",
+  "display": "standalone",
   "themeColor": "#000000",
   "themeColorDark": "#000000",
   "navigationColor": "#000000",

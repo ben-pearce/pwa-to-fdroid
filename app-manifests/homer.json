@@ -3,7 +3,7 @@
   "host": "jessie.benpearce.io",
   "name": "Homer Dashboard",
   "launcherName": "Homer",
-  "display": "fullscreen",
+  "display": "standalone",
   "themeColor": "#3367D6",
   "themeColorDark": "#000000",
   "navigationColor": "#000000",
