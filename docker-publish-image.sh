@@ -16,7 +16,17 @@ fi
 docker build \
   --build-arg KEYSTORE_PASSWORD=$(cat .keystore-password) \
   --build-arg KEY_PASSWORD=$(cat .keystore-password) \
-  -t pwa-to-fdroid .
+  -f Dockerfile.builder \
+  -t pwa-to-fdroid/builder .
+
+if [ ! -f "keystore.p12" ];
+  then
+    builder=$(docker create pwa-to-fdroid/builder)
+    docker cp $builder:/repo/keystore.p12 ./keystore.p12
+    docker rm -v $builder
+fi
+
+docker build -t pwa-to-fdroid .
 
 docker tag pwa-to-fdroid $1:latest
 docker push $1:latest
@@ -28,3 +38,4 @@ if git describe --tags --abbrev=0 &>/dev/null;
 fi
 
 docker rmi -f $(docker images --filter=reference="*pwa-to-fdroid" -q)
+docker rmi -f $(docker images --filter=reference="*pwa-to-fdroid/builder" -q)

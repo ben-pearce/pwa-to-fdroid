@@ -2,3 +2,4 @@ config
 docker-compose.yml
 
 .keystore-password
+*.p12
