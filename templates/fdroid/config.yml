@@ -5,13 +5,13 @@ sdk_path: $ANDROID_HOME
 
 # Canonical URL of the repositoy, needs to end in /repo. Is is used to identity
 # the repo in the client, as well.
-repo_url: https://fdroid.benpearce.io/repo
-repo_name: F-Droid Repository
+repo_url: FDROID_REPO_URL
+repo_name: FDROID_REPO_NAME
 
 # As above, but for the archive repo.
 #
-archive_url: https://fdroid.benpearce.io/archive
-archive_name: F-Droid Repository Archive
+archive_url: FDROID_ARCHIVE_URL
+archive_name: FDROID_ARCHIVE_NAME
 
 # The key (from the keystore defined below) to be used for signing the
 # repository itself. This is the same name you would give to keytool or
