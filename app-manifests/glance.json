@@ -1,10 +1,10 @@
 {
   "packageId": "io.benpearce.jessie.twa",
   "host": "jessie.benpearce.io",
-  "name": "Homer Dashboard",
-  "launcherName": "Homer",
+  "name": "Glance",
+  "launcherName": "Glance",
   "display": "standalone",
-  "themeColor": "#3367D6",
+  "themeColor": "#000000",
   "themeColorDark": "#000000",
   "navigationColor": "#000000",
   "navigationColorDark": "#000000",
@@ -13,19 +13,17 @@
   "backgroundColor": "#000000",
   "enableNotifications": true,
   "startUrl": "/",
-  "iconUrl": "https://jessie.benpearce.io/assets/icons/icon-any.png",
-  "maskableIconUrl": "https://jessie.benpearce.io/assets/icons/icon-maskable.png",
-  "monochromeIconUrl": "https://jessie.benpearce.io/assets/icons/safari-pinned-tab.svg",
+  "iconUrl": "https://jessie.benpearce.io/static/02b8858d2d/app-icon.png",
   "splashScreenFadeOutDuration": 300,
   "signingKey": {
     "path": "/app/android.keystore",
-    "alias": "android"
+    "alias": "fdroid"
   },
   "appVersionName": "1",
   "appVersionCode": 1,
   "shortcuts": [],
   "generatorApp": "bubblewrap-cli",
-  "webManifestUrl": "https://jessie.benpearce.io/assets/manifest.json",
+  "webManifestUrl": "https://jessie.benpearce.io/manifest.json",
   "fallbackType": "customtabs",
   "features": {},
   "alphaDependencies": {
@@ -34,11 +32,14 @@
   "enableSiteSettingsShortcut": true,
   "isChromeOSOnly": false,
   "isMetaQuest": false,
-  "fullScopeUrl": "https://jessie.benpearce.io/assets/",
-  "minSdkVersion": 19,
+  "fullScopeUrl": "https://jessie.benpearce.io/",
+  "minSdkVersion": 21,
   "orientation": "portrait",
   "fingerprints": [],
   "additionalTrustedOrigins": [],
   "retainedBundles": [],
+  "protocolHandlers": [],
+  "fileHandlers": [],
+  "launchHandlerClientMode": "",
   "appVersion": "1"
 }

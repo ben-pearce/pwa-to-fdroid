@@ -18,13 +18,13 @@
   "splashScreenFadeOutDuration": 300,
   "signingKey": {
     "path": "/app/android.keystore",
-    "alias": "android"
+    "alias": "fdroid"
   },
-  "appVersionName": "1",
-  "appVersionCode": 1,
+  "appVersionName": "2",
+  "appVersionCode": 2,
   "shortcuts": [],
   "generatorApp": "bubblewrap-cli",
-  "webManifestUrl": "https://cobalt.jessie.benpearce.io/manifest.webmanifest",
+  "webManifestUrl": "https://cobalt.jessie.benpearce.io/manifest.json",
   "fallbackType": "customtabs",
   "features": {},
   "alphaDependencies": {
@@ -34,9 +34,11 @@
   "isChromeOSOnly": false,
   "isMetaQuest": false,
   "fullScopeUrl": "https://cobalt.jessie.benpearce.io/",
-  "minSdkVersion": 19,
+  "minSdkVersion": 21,
   "shareTarget": {
+    "method": "GET",
     "action": "https://cobalt.jessie.benpearce.io/",
+    "enctype": "application/x-www-form-urlencoded",
     "params": {
       "text": "u",
       "url": "u"
@@ -46,5 +48,8 @@
   "fingerprints": [],
   "additionalTrustedOrigins": [],
   "retainedBundles": [],
-  "appVersion": "1"
+  "protocolHandlers": [],
+  "fileHandlers": [],
+  "launchHandlerClientMode": "",
+  "appVersion": "2"
 }

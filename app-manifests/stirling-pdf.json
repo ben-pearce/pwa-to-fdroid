@@ -4,7 +4,7 @@
   "name": "Stirling-PDF",
   "launcherName": "Stirling-PDF",
   "display": "standalone",
-  "themeColor": "#FFFFFF",
+  "themeColor": "#000000",
   "themeColorDark": "#000000",
   "navigationColor": "#000000",
   "navigationColorDark": "#000000",
@@ -17,13 +17,13 @@
   "splashScreenFadeOutDuration": 300,
   "signingKey": {
     "path": "/app/android.keystore",
-    "alias": "android"
+    "alias": "fdroid"
   },
-  "appVersionName": "1",
-  "appVersionCode": 1,
+  "appVersionName": "2",
+  "appVersionCode": 2,
   "shortcuts": [],
   "generatorApp": "bubblewrap-cli",
-  "webManifestUrl": "https://stirling-pdf.jessie.benpearce.io/site.webmanifest",
+  "webManifestUrl": "https://stirling-pdf.jessie.benpearce.io/manifest.json",
   "fallbackType": "customtabs",
   "features": {},
   "alphaDependencies": {
@@ -33,10 +33,13 @@
   "isChromeOSOnly": false,
   "isMetaQuest": false,
   "fullScopeUrl": "https://stirling-pdf.jessie.benpearce.io/",
-  "minSdkVersion": 19,
-  "orientation": "default",
+  "minSdkVersion": 21,
+  "orientation": "portrait",
   "fingerprints": [],
   "additionalTrustedOrigins": [],
   "retainedBundles": [],
-  "appVersion": "1"
+  "protocolHandlers": [],
+  "fileHandlers": [],
+  "launchHandlerClientMode": "",
+  "appVersion": "2"
 }
