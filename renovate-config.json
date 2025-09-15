@@ -1,0 +1,8 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "repositories": ["ben-pearce/pwa-to-fdroid"],
+  "prHourlyLimit": 15,
+  "prConcurrentLimit": 15,
+  "pinDigests": true
+}
