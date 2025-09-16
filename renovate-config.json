@@ -4,5 +4,17 @@
   "repositories": ["ben-pearce/pwa-to-fdroid"],
   "prHourlyLimit": 15,
   "prConcurrentLimit": 15,
-  "pinDigests": true
+  "pinDigests": true,
+  "customManagers": [
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/^Dockerfile$/"],
+      "matchStrings": [
+        "ARG ANDROGUARD_VERSION=[\"']?(?<currentValue>\\d+\\.\\d+.\\d+)[\"']?"
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "androguard/androguard",
+      "extractVersionTemplate": "^v(?<version>.*)$"
+    }
+  ]
 }
