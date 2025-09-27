@@ -34,7 +34,7 @@ RUN --mount=type=secret,id=key_password \
 RUN chmod 0600 /repo/config.yml
 RUN . /etc/profile.d/bsenv.sh && GRADLE_USER_HOME=${home_vagrant}/.gradle ; ${fdroidserver}/fdroid update -c
 
-FROM ghcr.io/googlechromelabs/bubblewrap:1.23.0@sha256:d5ebce26f14ba3ace91d20e52791dc37f5fb69adc496213ef926e004a0c82416 AS bubblewrap
+FROM ghcr.io/googlechromelabs/bubblewrap:1.24.0@sha256:f5d6d163f7098bd4ff696fd1713208551583973e0b1c793924236ef282804f2d AS bubblewrap
 COPY --from=repository-base /repo /repo
 
 COPY app-manifests /app-manifests
