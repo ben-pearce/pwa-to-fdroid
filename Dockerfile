@@ -50,7 +50,7 @@ FROM fdroid AS repository
 COPY --from=bubblewrap /repo /repo
 RUN . /etc/profile.d/bsenv.sh && GRADLE_USER_HOME=${home_vagrant}/.gradle ${fdroidserver}/fdroid update -c
 
-FROM nginx:1.29.1-alpine@sha256:42a516af16b852e33b7682d5ef8acbd5d13fe08fecadc7ed98605ba5e3b26ab8
+FROM nginx:1.29.2-alpine@sha256:7c1b9a91514d1eb5288d7cd6e91d9f451707911bfaea9307a3acbc811d4aa82e
 
 COPY --from=repository /repo/repo /usr/share/nginx/html/repo
 
