@@ -1,4 +1,4 @@
-ARG ANDROGUARD_VERSION="4.1.3"
+ARG ANDROGUARD_VERSION="4.1.4"
 ARG ANDROGUARD_URL="https://github.com/androguard/androguard/archive/refs/tags/v${ANDROGUARD_VERSION}.tar.gz"
 ARG FDROID_REPO_URL="https://fdroid.example.com/repo"
 ARG FDROID_REPO_NAME="F-Droid Repository"
